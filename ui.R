@@ -144,7 +144,7 @@ shinyUI(dashboardPage(
       tabItem(tabName="support-attendance",
               fluidPage(
                 box(width=12, selectizeInput(inputId = "Support4",
-                                   label = "Support",
+                                   label = "Support Metric",
                                    choices = cols),
                     tags$h4(p(strong("Effect of Support Levels on Attendance Rates by Race"))),
                     tags$h5(
