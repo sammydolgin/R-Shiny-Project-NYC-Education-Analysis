@@ -92,7 +92,7 @@ subj = c(names(df)[37], names(df)[38])
 
 shinyServer(function(input, output, session){
 
-#--------------Tab 2: Support Metrics, Affect on Academic Performance--------------#  
+#--------------Tab 2: Support Metrics, Effect on Academic Performance--------------#  
     
   output$support_scores_boxplot <- renderPlot(
     ggplot(df %>% select(!!sym(input$Support2), racial_majority, !!sym(input$Subject2)),
@@ -111,7 +111,7 @@ shinyServer(function(input, output, session){
     scale_fill_manual(values = c("white", "white", "white", "purple")) +
     scale_color_brewer(palette = "Set1") + theme(legend.title=element_blank()))
   
-  #--------------Tab 3: Economic Need, affect on Academic Performance--------------#
+  #--------------Tab 3: Economic Need, Effect on Academic Performance--------------#
   
   output$need_scores_scatter <- renderPlot(
     ggplot(df %>% select(!!sym(input$Subject3), economic_need_index, racial_majority), 
@@ -122,7 +122,7 @@ shinyServer(function(input, output, session){
     geom_point(data=gd, shape = 23, size=10, fill="grey", stroke=1.5) +
     geom_smooth(method=lm, se=TRUE, size=.75, alpha=0.2))
   
-  #--------------Tab 4: Support Metrics, affect on Student Attendance--------------#
+  #--------------Tab 4: Support Metrics, Effect on Student Attendance--------------#
   
   output$support_attendance_boxplot <- renderPlot(
     ggplot(df %>% select(!!sym(input$Support4), racial_majority, student_attendance_rate),
@@ -144,7 +144,7 @@ shinyServer(function(input, output, session){
     theme(legend.title=element_blank())
   )
   
-  #--------------Tab 5: Economic Need, affect on Student Attendance--------------#
+  #--------------Tab 5: Economic Need, Effect on Student Attendance--------------#
   
   output$need_attendance_scatter <- renderPlot(
     ggplot(df %>% select(student_attendance_rate, economic_need_index, racial_majority),
