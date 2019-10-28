@@ -119,8 +119,8 @@ shinyServer(function(input, output, session){
               y=!!sym(input$Subject3), 
               color=racial_majority)) + 
     geom_point(size=2, shape=5) +
-    geom_point(data=gd, shape = 23, size=10, fill="black", stroke=2.5) +
-    geom_smooth(method=lm, se=TRUE, size=1, alpha=.3))
+    geom_point(data=gd, shape = 23, size=10, fill="grey", stroke=1.5) +
+    geom_smooth(method=lm, se=TRUE, size=.75, alpha=0.2))
   
   #--------------Tab 4: Support Metrics, affect on Student Attendance--------------#
   
@@ -149,9 +149,9 @@ shinyServer(function(input, output, session){
   output$need_attendance_scatter <- renderPlot(
     ggplot(df %>% select(student_attendance_rate, economic_need_index, racial_majority),
            aes(x=economic_need_index,
-              y=student_attendance_rate,
-              color=racial_majority)) +
-    geom_point(size=1, shape=5) + geom_jitter(height=0.5, size=1, shape=5) +
-    geom_point(data=gd, shape = 23, size=10, fill="black", stroke=2.5) + geom_smooth(se = TRUE, size=1, alpha=0.2))
+               y=student_attendance_rate,
+               color=racial_majority)) +
+    geom_point(size=.5, shape=5) + geom_jitter(height=0.5, size=.5, shape=5) +
+    geom_point(data=gd, shape = 23, size=10, fill="grey", stroke=1.5) + geom_smooth(se = TRUE, size=1.5, alpha=0.1))
 
 })
