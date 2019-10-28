@@ -114,7 +114,7 @@ shinyUI(dashboardPage(
                                        label = "Subject",
                                        choices = subj),
             tags$h4(
-              p(strong("Effect of Support Levels on Academic Scores by Race"))
+              p(strong("Effect of Support Levels on Academic Performance by Race"))
             ),
             tags$h5(
               p("This plot shows the impact of increasing support levels on a school's academic performance, broken down into groups of schools with different racial majorities. For each group, the boxes increase in amount of support from left to right."),
@@ -140,7 +140,7 @@ shinyUI(dashboardPage(
                                        label = "Subject",
                                        choices = subj),
             tags$h4(
-              p(strong("Effect of Economic Need on Academic Scores by Race"))),
+              p(strong("Effect of Economic Need on Academic Performance by Race"))),
             tags$h5(
               p("This plot shows the impact of increasing student economic need on a school's academic performance, broken down into groups of schools with different racial majorities."),
               p("Across all races, we observe a clear negative linear relationship between student economic need and academic performance."),
