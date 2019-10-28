@@ -103,7 +103,7 @@ shinyUI(dashboardPage(
           
       ))),
           
-      #--------------Tab 2: Support Metrics, Affect on Academic Performance--------------#
+      #--------------Tab 2: Support Metrics, Effect on Academic Performance--------------#
       
       tabItem(tabName="support-scores",
         fluidPage(
@@ -132,7 +132,7 @@ shinyUI(dashboardPage(
                 
       ))),
       
-      #--------------Tab 3: Economic Need, affect on Academic Performance--------------#
+      #--------------Tab 3: Economic Need, Effect on Academic Performance--------------#
       
       tabItem(tabName="need-scores",
         fluidPage(
@@ -151,7 +151,7 @@ shinyUI(dashboardPage(
               p(em("Large diamond coordinates refer to the mean values for all schools of each racial majority"))
                              )))),
       
-      #--------------Tab 4: Support Metrics, affect on Student Attendance--------------#
+      #--------------Tab 4: Support Metrics, Effect on Student Attendance--------------#
       
       tabItem(tabName="support-attendance",
         fluidPage(
@@ -174,7 +174,7 @@ shinyUI(dashboardPage(
                 
       ))),
       
-      #--------------Tab 5: Economic Need, affect on Student Attendance--------------#
+      #--------------Tab 5: Economic Need, Effect on Student Attendance--------------#
       
         tabItem(tabName="need-attendance",
          box(width=12, tags$h4(p(strong("Effect of Economic Need on Attendance Rates by Race"))),
