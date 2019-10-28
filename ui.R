@@ -119,7 +119,7 @@ shinyUI(dashboardPage(
             tags$h5(
               p("This plot shows the impact of increasing support levels on a school's academic performance, broken down into groups of schools with different racial majorities. For each group, the boxes increase in amount of support from left to right."),
               p("We observe that across most combinations of support metric, subject, and race, there is a notable increase in academic performance as the amount of support increases. That said, the magnitude of this impact deviates heavily between racial groups based on what support metric and/or subject we are looking at."),
-              p("For example, we observe that the positive impact of a high Strong Family-Community Ties Rating on math proficiency is less prevelant in schools with predominantly Asian students when compared to schools with predominantly Hispanic students.")
+              p("For example, we observe that the positive impact of a high Strong Family-Community Ties Rating on math proficiency is less prevelant in schools with predominantly Asian students when compared to schools with predominantly Hispanic students. Feel free to toggle the variables above.")
             ),
             fluidRow(plotOutput("support_scores_boxplot")),
             tags$h4(
@@ -163,7 +163,7 @@ shinyUI(dashboardPage(
             tags$h5(
               p("This plot shows the impact of increasing support levels on a school's average attendance rate, broken down into groups of schools with different racial majorities. For each group, the boxes increase in amount of support from left to right."),
               p("We observe that across most combinations of support metric and racial majority, there is a notable increase in attendance rates as the amount of support increases. That said, the magnitude of this impact deviates heavily between racial groups based on what support metric we are looking at."),
-              p("For example, we observe that the positive impact of a high Effective School Leadership Rating on attendance rates is less prevelant in schools with predominantly White students when compared to schools with predominantly Black students.")),
+              p("For example, we observe that the positive impact of a high Effective School Leadership Rating on attendance rates is less prevelant in schools with predominantly White students when compared to schools with predominantly Black students. Feel free to toggle the variables above.")),
             fluidRow(plotOutput("support_attendance_boxplot")),
             tags$h4(
               p(strong("Density of Attendance Rates by Level of Support"))),
